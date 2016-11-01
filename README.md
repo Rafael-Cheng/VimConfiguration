@@ -32,7 +32,9 @@ For now it enables you:
 1. Install Git
     
    for Linux: `$ sudo apt-get install git`
+   
    for Mac OSX:
+   
    install brew first and then: `$ brew install git`
 
 2. Setup Vundle
