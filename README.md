@@ -21,7 +21,7 @@ For now it enables you:
    #!/usr/bin/sh
    ```
    
-   You can write your own header by rewrite .vimrc file.
+   You can write your own header by rewriting .vimrc file.
 
 * Auto-compelte support.
    YouCompleteMe is a decent plugin which can auto-complete your code and boost your efficiency. 
