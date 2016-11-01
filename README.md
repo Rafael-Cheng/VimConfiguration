@@ -1,3 +1,7 @@
+
+
+
+
 # VimConfiguration
 
 ##  Features
@@ -13,16 +17,16 @@ For now it enables you:
 
 ```python
 #!/usr/bin/env python
-# -*- encoding:utf-8 -*-
+# -*- encoding:utf-8 -*-and also shell header:
 ```
 
-​	and also shell header:
+  and also shell header:
 
 ```shell
 #!/usr/bin/sh
 ```
 
-​	But it can also generate any header you want.  Just rewrite .vimrc file.
+​  But it can also generate any header you want.  Just rewrite .vimrc file.
 
 * Auto-compelte support.
 
@@ -38,9 +42,9 @@ For now it enables you:
 
 `sudo apt-get install git`
 
-​	for Mac OSX:
+​  for Mac OSX:
 
-​	install brew first and then,
+​  install brew first and then,
 
 `brew install git`
 
