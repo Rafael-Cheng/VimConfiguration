@@ -1,8 +1,4 @@
-
-
-
-
-# VimConfiguration
+VimConfiguration
 
 ##  Features
 
@@ -13,20 +9,16 @@ For now it enables you:
 * basic coding toolkits, like line number, syntax highlighting, auto indentation and I it also replaces all the tabs in your source file to spaces. It also shows cursor line and cursor column, which enables you find bugs more easily.
 
 
-* generate python header automatically:
+* generate python and shell header automatically:
 
 ```python
 #!/usr/bin/env python
 # -*- encoding:utf-8 -*-and also shell header:
 ```
 
-  and also shell header:
-
 ```shell
 #!/usr/bin/sh
 ```
-
-​  But it can also generate any header you want.  Just rewrite .vimrc file.
 
 * Auto-compelte support.
 
@@ -38,29 +30,20 @@ For now it enables you:
 
 1. Install Git
 
-   for Linux:
+   for Linux: `sudo apt-get install git`
 
-`sudo apt-get install git`
+   ​  for Mac OSX:
 
-​  for Mac OSX:
-
-​  install brew first and then,
-
-`brew install git`
-
+     install brew first and then,`rew install git`
 
 
 2. Setup Vundle
 
 `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
 
-
-
 3. Copy this .vimrc file to your home directory:
 
 `git clone https://github.com/Rafael-Cheng/VimConfiguration.git ~`
-
-
 
 4. Launch Vim and run `:PluginInstall`
 
