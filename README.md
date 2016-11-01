@@ -42,8 +42,11 @@ For now it enables you:
    `$ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
 
 3. Copy this .vimrc file to your home directory:
-        
-   `git clone https://github.com/Rafael-Cheng/VimConfiguration.git ~`
+   
+   ```bash
+   $ git clone https://github.com/Rafael-Cheng/VimConfiguration.git ~/vim
+   $ cp ~/vim/.vimrc ~
+   ```
 
 4. Launch Vim and run `:PluginInstall`
    
