@@ -8,16 +8,20 @@ For now it enables you:
 
 * basic coding toolkits, like line number, syntax highlighting, auto indentation and I it also replaces all the tabs in your source file to spaces. It also shows cursor line and cursor column, which enables you find bugs more easily.
 
-* generate python and shell header automatically:
+* generate python header automatically:
 
    ```python
    #!/usr/bin/env python
    # -*- encoding:utf-8 -*-
    ```
 
+   and also shell header:
+
    ```shell
    #!/usr/bin/sh
    ```
+   
+   You can write your own header by rewrite .vimrc file.
 
 * Auto-compelte support.
    YouCompleteMe is a decent plugin which can auto-complete your code and boost your efficiency. 
