@@ -66,8 +66,11 @@ For now it enables you:
    $ ./install.py --Clang-completer
     ```
 6. Install Ctags
+
    for Mac OSX: `$ brew install ctags`
+   
    for Linux: `$sudo apt-get install ctags`
+   
    create tags file at the directory you want to search: 
    
    ```bash
