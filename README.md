@@ -26,7 +26,8 @@ For now it enables you:
 * Auto-compelte support.
    YouCompleteMe is a decent plugin which can auto-complete your code and boost your efficiency. 
 
-
+* Ctags helps you local the definition of a choosen function.
+   
 ## How to use
 
 1. Install Git
@@ -63,7 +64,19 @@ For now it enables you:
    ```bash
    $ cd ~/.vimrc/bundle/YouCompleteMe
    $ ./install.py --Clang-completer
+    ```
+6. Install Ctags
+   for Mac OSX: `$ brew install ctags`
+   for Linux: `$sudo apt-get install ctags`
+   create tags file at the directory you want to search: 
+   
+   ```bash
+   $ cd path/you/want/to/add/tags/in
+   $ ctags -R *
    ```
+   Add your path to .vimrc
+   set tags+=replace/by/your/path
+
 
 ## Links
 
@@ -73,7 +86,7 @@ Vundle: https://github.com/VundleVim/Vundle.vim
 
 YouCompleteMe: https://github.com/Valloric/YouCompleteMe
 
-
+Ctags: https://github.com/universal-ctags/ctags
 
 ## License
 

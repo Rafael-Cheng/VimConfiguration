@@ -39,6 +39,13 @@ set autoindent
 " replace all tabs with spaces
 :%retab
 
+" ctags configuration
+map :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q . :TlistUpdate
+imap :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q . :TlistUpdate
+set tags=tags
+set tags+=./tags "add current directory's generated tags file
+set tags+=path/to/your/tags "add your own path 
+
 autocmd BufNewFile *.py,*.sh exec ":call SetTitle()"
 func SetTitle()
     if &filetype == 'python'
