@@ -55,6 +55,14 @@ For now it enables you:
 
 5. Install YouCompleteMe
 
+   You may need to install CMake before installing YouCompleteMe.
+   
+   ```bash
+   $ sudo apt-get install build-essential cmake
+   ```
+   
+   Then install YouCompleteMe.
+   
    ```bash
    $ cd ~/.vimrc/bundle/YouCompleteMe
    $ ./install.py
