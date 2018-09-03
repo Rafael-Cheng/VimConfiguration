@@ -1,0 +1,42 @@
+set nocompatible              " be iMproved, required
+filetype plugin indent on    " required
+
+" syntax setting
+syntax enable
+syntax on
+
+" basic setting
+set nu
+set backspace=2
+set background=dark
+set ruler
+set cursorline
+set cursorcolumn
+
+" indentation setting
+filetype plugin indent on
+set ts=4
+set sw=4
+set expandtab
+set autoindent
+
+" replace all tabs with spaces
+:%retab
+
+" ctags configuration
+map :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q . :TlistUpdate
+imap :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q . :TlistUpdate
+set tags=tags
+set tags+=./tags "add current directory's generated tags file
+set tags+=path/to/your/tags "add your own path 
+
+autocmd BufNewFile *.py,*.sh exec ":call SetTitle()"
+func SetTitle()
+    if &filetype == 'python'
+        call setline(1, "\#!/usr/bin/env python")
+        call setline(2, "\# -*- encoding:utf-8 -*-")
+    endif
+    if &filetype == 'sh'
+        call setline(1, "\#!/usr/bin/sh")
+    endif
+endfunc
